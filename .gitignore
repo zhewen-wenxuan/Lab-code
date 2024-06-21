@@ -1,5 +1,5 @@
 # Ignore virtual environment directory
-venv/
+venv_spacerange/
 
 # Ignore MacOS system files
 .DS_Store
