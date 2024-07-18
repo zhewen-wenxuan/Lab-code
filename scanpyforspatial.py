@@ -12,7 +12,6 @@ adata.var_names_make_unique()
 adata.var["mt"] = adata.var_names.str.startswith("MT-")
 sc.pp.calculate_qc_metrics(adata, qc_vars=["mt"], inplace=True)
 
-adata
 
 fig, axs = plt.subplots(1, 4, figsize=(15, 4))
 sns.histplot(adata.obs["total_counts"], kde=False, ax=axs[0])
